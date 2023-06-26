@@ -34,16 +34,16 @@ const Header = () => {
         resizeMode="contain"
       />
       <Pressable onPress={() => navigation.navigate("Profile")}>
-        {profileInfo.image ? (
+        {profileInfo?.image ? (
           <Image
-            source={{ uri: profileInfo.image }}
+            source={{ uri: profileInfo?.image }}
             style={styles.avt}
             resizeMode="cover"
           />
         ) : (
           <Image
             source={{
-              uri: `https://ui-avatars.com/api/?name=${profileInfo.firstName}+${profileInfo.lastName}`,
+              uri: `https://ui-avatars.com/api/?name=${profileInfo?.firstName}+${profileInfo?.lastName}`,
             }}
             style={styles.avt}
             resizeMode="cover"

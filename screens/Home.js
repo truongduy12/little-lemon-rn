@@ -41,7 +41,6 @@ const Home = () => {
           }));
           await insertData(items);
         }
-
         setData(menuItems);
         setSections([...new Set(menuItems.map((i) => i.category))]);
       } catch (e) {

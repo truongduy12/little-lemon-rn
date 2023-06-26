@@ -11,8 +11,11 @@ import Header from "./components/Header";
 import { AuthContext } from "./Context";
 import Home from "./screens/Home";
 import { useFonts } from "expo-font";
+import { db } from "./db";
 
 const Stack = createNativeStackNavigator();
+
+// db.deleteAsync();
 
 export default function App() {
   const [fontLoaded] = useFonts({
